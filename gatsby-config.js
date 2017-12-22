@@ -3,6 +3,13 @@ module.exports = {
     title: "Pandas Eating A Fuckton",
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-plugin-typography`,
